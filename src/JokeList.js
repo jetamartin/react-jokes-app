@@ -22,7 +22,6 @@ class JokeList extends React.Component {
   }
 
   componentDidUpdate() {
-    debugger;
     if (this.state.jokes.length < this.props.numJokesToGet) this.getJokes();
   }
 
@@ -52,9 +51,8 @@ class JokeList extends React.Component {
 
   /* empty joke list and then call getJokes */
   generateNewJokes() {
-    debugger;
-    this.setState.jokes = [];
-    debugger;
+     // this.setState.jokes = [];
+    this.setState({jokes: []})
   }
 
   /* change vote for this id by delta (+1 or -1) */  
